@@ -1,9 +1,10 @@
 === Seattle Ninja Social ===
 Author: Ken Fujimoto
+Donate link: http://www.ninjajournal.com/donate/
 Tags: social, icons, network, facebook, instagram, pinterest, linkedin, share, twitter,  links
 Requires at least: 4.0
 Tested up to: 4.1
-Stable tag: 1.0
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +31,7 @@ Please Choose a color for your social icon.  The color you choose will change al
 == Changelog ==
 
 
-= 1.0 =
+= 1.2 =
 
+Added banner images.
 *Release Date - 27th December, 2014*
