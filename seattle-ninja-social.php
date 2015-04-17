@@ -3,7 +3,7 @@
    Plugin Name: Seattle Ninja Social
    Plugin URI: http://seattleninja.com/wordpress/plugins
    Description: Font-Awesome Based social icon widget that allows you to enter the icon by name and link. 
-   Version: 1.4
+   Version: 1.5
    Author: Ken Fujimoto
    Author URI: http://www.ninjajournal.com
    License: GPLv2 or later
@@ -25,7 +25,6 @@ class Seattle_Ninja_Social extends WP_Widget {
 	protected $defaults;
 
 	function __construct() {
-
 		/**
 		 * Default widget option values.
 		 */
@@ -37,7 +36,6 @@ class Seattle_Ninja_Social extends WP_Widget {
 			'hover_color'			 => '#888888'
 			
 		));
-	
 			
 	    $widget_ops = array(
 			'classname'   => 'seattle_ninja_social',
@@ -50,18 +48,14 @@ class Seattle_Ninja_Social extends WP_Widget {
 
 		$this->WP_Widget( 'seattle-ninja-social', __( 'Seattle Ninja Social', 'seattleninja' ), $widget_ops, $control_ops );
 
-
 		add_action('admin_head','seattle_ninja_admin_styles');	
 
 		add_action( 'admin_enqueue_scripts', array($this, 'seattle_ninja_admin_scripts'));
 
-
 		add_action( 'wp_enqueue_scripts', array( $this, 'apply_ninja_style' ) );
 		add_action( 'wp_head', array( $this, 'update_ninja_style' ) );
 
-
 	}
-
 
 
 	function form($instance) {
@@ -86,16 +80,12 @@ class Seattle_Ninja_Social extends WP_Widget {
 	     $icon_10 = $instance['icon_10']; $url_10 = $instance['url_10'];
 
 	  ?>
-	  
 	  <div id="seattle-ninja-controller">
-	  	
-
 
 		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" placeholder="Enter Title" /></p>
 		<p><label><input id="<?php echo $this->get_field_id( 'new_window' ); ?>" type="checkbox" name="<?php echo $this->get_field_name( 'new_window' ); ?>" value="1" <?php checked( 1, $instance['new_window'] ); ?>/> <?php esc_html_e( 'Open links in new window?', 'seattleninja' ); ?></label></p>
 		<p><label for="<?php echo $this->get_field_id( 'icon_size' ); ?>"><?php _e( 'Size: ', 'seattleninja' ); ?>: </label> <input id="<?php echo $this->get_field_id( 'size' ); ?>" placeholder="eg., 24" name="<?php echo $this->get_field_name( 'icon_size' ); ?>" type="text" value="<?php echo esc_attr( $instance['icon_size'] ); ?>" />px</p>
-
 
 		<p><label for="<?php echo $this->get_field_id('icon_color'); ?>"><?php _e('Icon Color: '); ?></label>
 		<input type="color" id="<?php echo $this->get_field_id( 'icon_color' ); ?>" name="<?php echo $this->get_field_name( 'icon_color' ); ?>" value="<?php echo esc_attr( $instance['icon_color'] ); ?>"  /></p>		
@@ -114,9 +104,7 @@ class Seattle_Ninja_Social extends WP_Widget {
 
      	  </div>
 		</div>
-		<p><a href="#TB_inline?width=1200&height=auto&inlineId=ninja-thickbox-id1" class="thickbox"><strong>Click Here for Cheet Sheet</strong></a></p>	
-	
-		
+		<p><a href="#TB_inline?width=1200&height=auto&inlineId=ninja-thickbox-id1" class="thickbox"><strong>Click Here for Cheet Sheet</strong></a></p>			
 		
 		<p><label>Font Awesome Name:</label></p>
 				<p> 	    
@@ -187,12 +175,10 @@ class Seattle_Ninja_Social extends WP_Widget {
 	 	         <input type="text" name="<?php echo $this->get_field_name('icon_11') ?>"   value="<?php echo esc_attr($icon_12); ?>" />
 			    <input type="text" name="<?php echo $this->get_field_name('url_11') ?>" value="<?php echo esc_attr($url_12); ?>"/> 
 				</p>		
-							
-																							
+																								
 	   </div>
 	    
 		
-
 	<?php }	
 
 	function update($new_instance, $old_instance) {
@@ -236,7 +222,6 @@ class Seattle_Ninja_Social extends WP_Widget {
     }
 
 
-
      function widget($args, $instance) {
 	 
 	    extract($args, EXTR_SKIP);
@@ -264,7 +249,6 @@ class Seattle_Ninja_Social extends WP_Widget {
 	    $icon_10 = empty($instance['icon_10']) ? '' : $instance['icon_10'];
 	    $icon_11 = empty($instance['icon_11']) ? '' : $instance['icon_11'];
 	    $icon_12 = empty($instance['icon_12']) ? '' : $instance['icon_12'];
-	    
 		
 		$url_1 = empty($instance['url_1']) ? '' : $instance['url_1'];
 	    $url_2 = empty($instance['url_2']) ? '' : $instance['url_2'];
@@ -277,8 +261,7 @@ class Seattle_Ninja_Social extends WP_Widget {
 	    $url_9 = empty($instance['url_9']) ? '' : $instance['url_9'];
 	    $url_10 = empty($instance['url_10']) ? '' : $instance['url_10'];
 	    $url_11 = empty($instance['url_11']) ? '' : $instance['url_11'];
-	    $url_12 = empty($instance['url_12']) ? '' : $instance['url_12'];
-	    
+	    $url_12 = empty($instance['url_12']) ? '' : $instance['url_12'];    
 
 		$hide_li_1 = empty($instance['url_1']) ? 'hide' : $instance['url_1'];
 	    $hide_li_2 = empty($instance['url_2']) ? 'hide' : $instance['url_2'];
@@ -292,7 +275,7 @@ class Seattle_Ninja_Social extends WP_Widget {
 	    $hide_li_10 = empty($instance['url_10']) ? 'hide' : $instance['url_10'];
 		$hide_li_11 = empty($instance['url_11']) ? 'hide' : $instance['url_11'];
 		$hide_li_12 = empty($instance['url_12']) ? 'hide' : $instance['url_12'];
-		
+
 
 		function seattle_ninja_shortcode(){
 		 	return 'ok';
@@ -318,17 +301,14 @@ class Seattle_Ninja_Social extends WP_Widget {
 
 	    echo $after_widget;
 
-
 		add_shortcode('seattle_ninja_social', 'seattle_ninja_shortcode');
 	
-		
 	}
-		
-		
+				
 	function apply_ninja_style() {	
 
 		wp_enqueue_style('add-ninja-admin-style', plugins_url('css/font-awesome.min.css', __FILE__));
-		$ninjacss = apply_filters( 'ninja_social_default_css', plugin_dir_url( __FILE__ ) . 'css/ninja-style.css' );
+		$ninjacss = apply_filters( 'ninja_social_default_css', plugin_dir_url( __FILE__ ) . 'css/ninja-style.min.css' );
 		wp_enqueue_style( 'simple-social-icons-font', esc_url( $ninjacss ), array(), '1.0', 'all' );
 		
 	}
@@ -362,7 +342,6 @@ class Seattle_Ninja_Social extends WP_Widget {
 	
 		}
 
-
 	
     function seattle_ninja_admin_scripts(){
         $screen = get_current_screen();
@@ -372,17 +351,13 @@ class Seattle_Ninja_Social extends WP_Widget {
 
     }
 
-
 // end of constructor
 }
-
 
 	function seattle_ninja_admin_styles(){
 		wp_enqueue_style('add-ninja-admin-style', plugins_url('css/ninja-admin-style.min.css', __FILE__));
 	    wp_enqueue_style('add-fancybox-admin-style', plugins_url('css/jquery.fancybox.css', __FILE__));		
 	}
-
-	
 
 	
 	add_action( 'widgets_init', 'ninja_load_widget' );
