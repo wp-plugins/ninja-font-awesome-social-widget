@@ -4,7 +4,7 @@ Donate link: http://www.ninjajournal.com/donate/
 Tags: social, icons, network, facebook, instagram, pinterest, linkedin, share, twitter,  links
 Requires at least: 4.0
 Tested up to: 4.1
-Stable tag: 1.5
+Stable tag: 1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,6 +52,10 @@ No, the invdividual social icons will be one color that you choose.
 2. Image of the widget options.
 
 == Changelog ==
+
+= 1.6 =
+
+Update stylesheet
 
 = 1.5 =
 minified css for performance
