@@ -3,7 +3,7 @@
    Plugin Name: Seattle Ninja Social
    Plugin URI: http://seattleninja.com/wordpress/plugins
    Description: Font-Awesome Based social icon widget that allows you to enter the icon by name and link. 
-   Version: 1.6
+   Version: 1.7
    Author: Ken Fujimoto
    Author URI: http://www.ninjajournal.com
    License: GPLv2 or later
@@ -30,7 +30,7 @@ class Seattle_Ninja_Social extends WP_Widget {
 		 */
 		$this->defaults = apply_filters( 'seattle_ninja_social', array(
 			'title'                  => '',
-			'new_window'             => 0,
+			'new_window'       => 0,
 			'icon_size'              => 32,
 			'icon_color'			 => '#BADA55',
 			'hover_color'			 => '#888888'
@@ -99,8 +99,7 @@ class Seattle_Ninja_Social extends WP_Widget {
       		<h3>Last Updated 12/20/2015</h3>
       		<p class="ninja-font-description">Looking for more icons: <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank" title="Font Icon List">Need more Help? </a><br/>
       			Go directly to the Cheat sheet to find more icons from Font Awesome</p>
-      			
-                <img class="ninja-font-image" src="<?php echo plugins_url('img/font-sheet2014.jpg', __FILE__) ?>">
+
 
      	  </div>
 		</div>
