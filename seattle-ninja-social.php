@@ -3,7 +3,7 @@
    Plugin Name: Seattle Ninja Social
    Plugin URI: http://seattleninja.com/wordpress/plugins
    Description: Font-Awesome Based social icon widget that allows you to enter the icon by name and link. 
-   Version: 1.7
+   Version: 1.8
    Author: Ken Fujimoto
    Author URI: http://www.ninjajournal.com
    License: GPLv2 or later
