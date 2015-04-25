@@ -35,12 +35,9 @@ div .widget.seattle_ninja_social ul li.hide
 	display:none;
 }
 
-body .seattle_ninja_social ul.seattle_social_ninja_list li
-{
-  border:0px solid #fff;
-}
+body ul.seattle_social_ninja_list li {border:0;}
+
+body .seattle_ninja_social ul.seattle_social_ninja_list li {  border:0; }
 
 body ul.seattle_social_ninja_list li:before
-{
-content: ' ' !important;
-}
+{content: ' ' !important;}
