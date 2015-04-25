@@ -31,13 +31,11 @@ div .widget.seattle_ninja_social ul.seattle_seattle_ninja_list li i.fa
 }
 
 div .widget.seattle_ninja_social ul li.hide
-{ 
-	display:none;
-}
+{ display:none;}
 
-body ul.seattle_social_ninja_list li {border:0;}
+body ul.seattle_social_ninja_list li:before {content: ' ' !important;}
 
-body .seattle_ninja_social ul.seattle_social_ninja_list li {  border:0; }
 
-body ul.seattle_social_ninja_list li:before
-{content: ' ' !important;}
+body ul.seattle_social_ninja_list li {border:0 !important;}
+
+body .seattle_ninja_social ul.seattle_social_ninja_list li {  border:0 !important; }
