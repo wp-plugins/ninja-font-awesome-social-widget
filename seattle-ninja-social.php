@@ -103,7 +103,7 @@ class Seattle_Ninja_Social extends WP_Widget {
 
      	  </div>
 		</div>
-		<p><a href="#TB_inline?width=1200&height=auto&inlineId=ninja-thickbox-id1" class="thickbox"><strong>Click Here for Cheet Sheet</strong></a></p>			
+			
 		
 		<p><label>Font Awesome Name:</label></p>
 				<p> 	    
