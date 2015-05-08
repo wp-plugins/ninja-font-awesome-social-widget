@@ -3,8 +3,8 @@ Author: Ken Fujimoto
 Donate link: http://www.ninjajournal.com/donate/
 Tags: social, icons, network, facebook, instagram, pinterest, linkedin, share, twitter,  links
 Requires at least: 4.0
-Tested up to: 4.2
-Stable tag: 1.9
+Tested up to: 4.3
+Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,6 +57,10 @@ their entire library.
 2. Image of the widget options.
 
 == Changelog ==
+
+= 2.0 =
+
+CSS updates
 
 = 1.9 =
 
